@@ -1,6 +1,5 @@
 #!/bin/sh
 
-echo "Detecting..."
 if [ -f $1/elm-package.json ]; then
   echo "Elm"
   exit 0

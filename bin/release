@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: .elm/elm-reactor -p $PORT
+  web: .elm/elm-reactor -p \$PORT
 EOF

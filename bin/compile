@@ -10,4 +10,6 @@ echo "-----> Found elm-package.json (did not check Elm version, this is a TODO)"
 
 $build_pack_path/elm/elm-package install -y
 mkdir -p $1/.elm
+mkdir -p $1/.profile.d
 cp $build_pack_path/elm/elm-* $1/.elm
+echo "PATH=\$PATH:$1/.elm" > $1/.profile.d/path.sh

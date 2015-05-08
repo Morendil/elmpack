@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: bin/elm-reactor -p 80
+  web: .elm/elm-reactor -p 80
 EOF

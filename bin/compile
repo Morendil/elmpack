@@ -9,3 +9,5 @@ build_pack_path=$(cd $(dirname $(dirname $0)); pwd)
 echo "-----> Found elm-package.json (did not check Elm version, this is a TODO)"
 
 $build_pack_path/elm/elm-package install -y
+mkdir -p $1/.elm
+cp $build_pack_path/elm/elm-* $1/.elm

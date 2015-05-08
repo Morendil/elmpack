@@ -4,9 +4,8 @@ indent() {
   sed -u 's/^/       /'
 }
 
+build_pack_path=$(cd $(dirname $(dirname $0)); pwd)
+
 echo "-----> Found elm-package.json (did not check Elm version, this is a TODO)"
 
-pwd
-cd $1
-/app/elm/elm-package install -y
-ls -l | indent
+$build_pack_path/elm/elm-package install -y

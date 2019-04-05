@@ -1,1 +1,1 @@
-This is a Heroku buildpack for Elm (0.15)
+This is a Heroku buildpack for Elm (up to 0.18)

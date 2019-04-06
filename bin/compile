@@ -13,3 +13,4 @@ echo "-----> Found elm-package.json"
 npm install -g elm-github-install
 npm install -g elm@">=$elm_min_version <$elm_max_version"
 elm-install
+elm-make
